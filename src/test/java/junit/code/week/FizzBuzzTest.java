@@ -2,7 +2,7 @@ package junit.code.week;
 
 import org.junit.Test;
 
-public class ApplicationTest {
+public class FizzBuzzTest {
 
     @Test
     public void test() throws Exception {
