@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 
 import static org.easymock.EasyMock.expect;
 import static org.easymock.EasyMock.replay;
+import static org.easymock.EasyMock.verify;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(EasyMockRunner.class)
@@ -27,6 +28,8 @@ public class FizzBuzzMockedTest {
         replay(mock);
 
         String result = subject.say(7);
+
+        verify(mock);
 
         assertEquals("Whizz", result);
     }
