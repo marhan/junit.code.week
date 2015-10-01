@@ -31,4 +31,7 @@ public class FizzBuzz {
         return String.valueOf(number);
     }
 
+    public String say(Input input) {
+        return say(input.getInput());
+    }
 }
